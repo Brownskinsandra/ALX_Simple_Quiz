@@ -17,13 +17,13 @@ function checkAnswer(){
 
     if (userAnswer === correctAnswer) {
         feedbackElement.textContent = "Correct! Well done.";
-        feedbackElement.style.color = "green"; // Optional: Add some style for correct answers
+        feedbackElement.style.color = "green";
     } else if (userAnswer) {
         feedbackElement.textContent = "That's incorrect. Try again!";
-        feedbackElement.style.color = "red"; // Optional: Add some style for incorrect answers
+        feedbackElement.style.color = "red"; 
     } else {
         feedbackElement.textContent = "Please select an answer before submitting.";
-        feedbackElement.style.color = "orange"; // Optional: Style for no selection
+        feedbackElement.style.color = "orange";
     }
 }
 document.getElementById("submit-answer").addEventListener("click", checkAnswer);
